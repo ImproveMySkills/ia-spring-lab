@@ -1,0 +1,9 @@
+spring:
+  application:
+   name: ai-spring-lab
+  datasource:
+    url: jdbc:h2:mem:ai-spring-lab-db
+    username: ai-spring-lab
+  h2:
+    console:
+      enabled: true

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "read": {
+      "*": "allow",
+      "src/main/resources/db/migration/**": "allow",
+      "src/main/resources/api-contracts/**": "allow",
+      "src/main/resources/application-prod.yml": "deny"
+    },
+    "edit": {
+      "*": "ask",
+      "src/main/java/**": "allow",
+      "src/test/**": "allow",
+      "src/main/resources/db/migration/**": "deny",
+      "src/main/resources/api-contracts/**": "deny",
+      "src/main/resources/application-prod.yml": "deny"
+    },
+    "bash": "ask"
+  }
+}
